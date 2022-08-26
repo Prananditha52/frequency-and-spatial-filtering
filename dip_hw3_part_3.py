@@ -1,11 +1,4 @@
-"""dip_hw3_part_1.py: Starter file to run howework 2"""
 
-# Example Usage: ./dip_hw3_part_3
-# Example Usage: python dip_hw3_part_3.py
-
-__author__      = "Pranav Mantini"
-__email__ = "pmantini@uh.edu"
-__version__ = "1.0.0"
 
 import cv2
 from frequency_filtering.filtering import Filtering
