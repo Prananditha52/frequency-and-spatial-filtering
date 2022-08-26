@@ -7,9 +7,7 @@ class Filtering:
         self.image = image
 
     def get_gaussian_filter(self):
-        """Initialzes and returns a 5X5 Gaussian filter
-            Use the formula for a 2D gaussian to get the values for a 5X5 gaussian filter
-        """
+
         Gaussian_filter=np.zeros((5,5),dtype=float)
         x = -2
         for i in range(5):
@@ -24,16 +22,12 @@ class Filtering:
    
 
     def get_laplacian_filter(self):
-        """Initialzes and returns a 3X3 Laplacian filter"""
+
         laplacian_filter=[[-1,-1,-1],[-1,8,-1],[-1,-1,-1]]
         return np.asarray(laplacian_filter)
 
     def filter(self, filter_name):
-        """Perform filtering on the image using the specified filter, and returns a filtered image
-            takes as input:
-            filter_name: a string, specifying the type of filter to use ["gaussian", laplacian"]
-            return type: a 2d numpy array
-                """
+
         image =self.image
         if filter_name == "gaussian":
             gussian_filter=self.get_gaussian_filter()
