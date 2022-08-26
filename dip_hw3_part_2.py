@@ -1,11 +1,4 @@
-"""dip_hw3_part_1.py: Starter file to run howework 3"""
 
-# Example Usage: ./dip_hw3_part_2
-# Example Usage: python dip_hw3_part_2.py
-
-__author__      = "Zhenggang Li"
-__email__ = "zli36@uh.edu"
-__version__ = "1.0.0"
 
 import cv2
 from spatial_filtering import filtering
